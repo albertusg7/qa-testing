@@ -9,6 +9,7 @@ nginx:
     - ./images/php/app/public:/var/www/html/app/public
 php:
   build: images/php
+  user: '${UID}:${GID}'
   volumes:
     - ./images/php:/var/www/html
   working_dir: /var/www/html/app/public
