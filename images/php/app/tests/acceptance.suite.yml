@@ -33,4 +33,8 @@ gherkin:
     contexts:
         default:
             - AcceptanceTester
-            - "Steps\\Example"  
+            - "Steps\\Example" 
+            - "Steps\\Daftar" 
+        catalog:
+        pos:
+        calculator:

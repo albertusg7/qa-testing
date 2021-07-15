@@ -17,4 +17,11 @@ class Example
      {
          $this->I->amOnPage($arg1);
      }
+    /**
+     * @When I see :arg1
+     */
+    public function iSee($arg1)
+    {
+        $this->I->see($arg1);
+    }
 }

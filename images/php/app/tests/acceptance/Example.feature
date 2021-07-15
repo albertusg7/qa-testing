@@ -5,3 +5,4 @@ Feature: Example
 
   Scenario: Try something
   Given I on page "/"
+  When I see "lampu"
