@@ -17,6 +17,7 @@ class Daftar
      */
     public function sayaBeradaDiHalamanBeranda($arg1)
     {
+        $this->I->amOnPage($arg1);
         // throw new \PHPUnit\Framework\IncompleteTestError("Step `saya berada di halaman :arg1` is not defined");
     }
 
@@ -25,15 +26,17 @@ class Daftar
     */
     public function terdapatOpsi1($arg1)
     {
+        $this->I->amOnPage('/');
         // throw new \PHPUnit\Framework\IncompleteTestError("Step `terdapat opsi: :arg1` is not defined");
     }
 
    /**
-    * @Given /terdapat opsi:/
+    * @Given /^terdapat opsi:/
     */
     public function terdapatOpsi2(\Behat\Gherkin\Node\PyStringNode $markdown)
     {
-        // throw new \PHPUnit\Framework\IncompleteTestError("Step `terdapat opsi :arg1` is not defined");
+        $this->I->amOnPage($markdown);
+        //  dd($markdown->getLine());
     }
 
    /**
@@ -41,6 +44,7 @@ class Daftar
     */
     public function sayaPilihOpsi($arg1)
     {
+        $this->I->amOnPage($arg1);
         // throw new \PHPUnit\Framework\IncompleteTestError("Step `saya pilih opsi :arg1` is not defined");
     }
 
@@ -49,6 +53,7 @@ class Daftar
     */
     public function sayaMemilihOpsi($arg1)
     {
+        $this->I->amOnPage($arg1);
         // throw new \PHPUnit\Framework\IncompleteTestError("Step `saya memilih opsi :arg1` is not defined");
     }
 }
