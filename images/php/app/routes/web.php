@@ -1,6 +1,7 @@
 <?php
 
 /** @var \Laravel\Lumen\Routing\Router $router */
+use Illuminate\Http\Response;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,19 @@ $router->get('/', function () use ($router) {
     return "lampu";
 });
 
+/**
+ * This method will return user detail for specified Id
+ * @param id  an integer of user id
+ * @return user detail in user detail in json format.
+ */
+$router->get('/users/{id}', function ($id) use ($router) {
+    if($id == "1")
+        return [
+            'user' => [
+                'name' => 'davert',
+                'email' => 'davert@codeception.com',
+                'status' => 'inactive'
+            ]
+            ];
+    return response()->json(['id' => 1], 404, ['x-header' => 'value header']);
+});

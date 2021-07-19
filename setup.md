@@ -28,3 +28,37 @@ untuk mencoba codeption berhasil terinstal coba
  ./vendor/bin/codecept dry-run unit
 ```
 
+## Install nodejs dkk di wsl-2
+
+Supaya mudah mengatur versi nodejs yang terinstall kita akan gunakan Nodejs Version Manager (nvm)
+```sh
+# update sesuai https://github.com/nvm-sh/nvm#install--update-script
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+# tutup terminal (exit) dan kemudian buka kembali, cek nvm 
+nvm -v
+# kalau berhasil akan muncul seperti ini
+# 0.38.0
+```
+Setelah selesai install nvm mari kita install nodejs menggunakan nvm
+```sh
+# cek node yang sudah terinstall
+nvm ls
+# melihat yang tersedia untuk diinstall 
+nvm ls-remote
+# melihat yang tersedia untuk diinstall, hanya versi lts (long time support)
+nvm ls-remote --lts
+# kita akan gunakan yang  lts paling akhir, install lts
+nvm install --lts
+# Installing latest LTS version.
+# ...
+# Now using node v14.17.3 (npm v6.14.13)
+# Creating default alias: default -> lts/* (-> v14.17.3)
+# Coba jalankan dan cek versi nodejs
+node -v
+# v14.17.3
+# check nodejs package manager (npm)
+npm -v
+# 6.14.13
+```
+
+## 
