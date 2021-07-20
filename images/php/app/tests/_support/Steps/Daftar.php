@@ -1,5 +1,6 @@
 <?php
 namespace Steps;
+use Log;
 
 
 
@@ -35,8 +36,8 @@ class Daftar
     */
     public function terdapatOpsi2(\Behat\Gherkin\Node\PyStringNode $markdown)
     {
-        $this->I->amOnPage($markdown);
-        //  dd($markdown->getLine());
+        // $this->I->amOnPage($markdown->getLine());
+        echo(json_encode($markdown->getStrings()));
     }
 
    /**
