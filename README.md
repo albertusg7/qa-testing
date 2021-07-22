@@ -1,7 +1,7 @@
 # Petunjuk penggunaan
 
 # install tanpa composer di lokal komputer (docker)
-Untuk yang tidak ingin menginstall php compser dkk di lokal computer bisa menggunakan perintah sbb untuk persiapa
+Untuk yang tidak ingin menginstall php compser dkk di lokal computer bisa menggunakan perintah sbb untuk persiapan
 ```sh
 pwd
 # /home/cbt/kasir
