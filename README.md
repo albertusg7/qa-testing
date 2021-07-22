@@ -1,4 +1,14 @@
-# Instal Composer dan Dependensi
+# Petunjuk penggunaan
+
+# install tanpa composer di lokal komputer (docker)
+Untuk yang tidak ingin menginstall php compser dkk di lokal computer bisa menggunakan perintah sbb untuk persiapa
+```sh
+pwd
+# /home/cbt/kasir
+ls
+# Dockerfile  Lumen_browser.png  Lumen_splash.png  README.md  README.old.md  docker-compose.yml  images  img
+docker-compose  run  composer2 install
+```
 
 Berikut ini perintah untuk menginstall composer dan dependensi aplikasi di ubuntu-20.04 (inc. WSL-2).
 ini hanya butuh dijalankan sekali dan solusi sementara sampai nanti dapet dari devops versi finalnya.
