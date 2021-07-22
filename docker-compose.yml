@@ -47,3 +47,8 @@ services:
   cache:
     image: memcached:1.6-alpine
 
+  composer2:
+    image: composer:2
+    user: '${UID}:${GID}'
+    volumes:
+      - ./images/php/app/:/app
