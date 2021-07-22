@@ -1,2 +1,4 @@
 deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main /etc/apt/sources.list.d/google-chrome.list
 deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main /etc/apt/sources.list.d/google-chrome.list
+zend_extension=xdebug.so /etc/php/7.4/cli/conf.d/20-xdebug.ini
+zend_extension=xdebug.so /etc/php/7.4/cli/conf.d/20-xdebug.ini

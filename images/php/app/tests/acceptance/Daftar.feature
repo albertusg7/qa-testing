@@ -1,4 +1,4 @@
-#language: id
+# language: id
 #workflow
 Fitur: Daftar Akun
 

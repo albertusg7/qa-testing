@@ -26,7 +26,7 @@ Saya sebagai user, dapat membuka aplikasi sooltan hingga homepage tanpa perlu lo
     Maka sistem akan menuju halaman "Homepage"
     Dan terdapat opsi "Tidak menampilkan lagi welcoming di kemudian hari"
 
-Skenario: Berhasil Skip ke Homepaeg
+Skenario: Berhasil Skip ke Homepage
 Saya sebagai user, dapat membuka aplikasi sooltan hingga homepage tanpa perlu login atau registrasi terlebih dahulu
 
     Dengan saya berada pada halaman "Welcoming Page 1"

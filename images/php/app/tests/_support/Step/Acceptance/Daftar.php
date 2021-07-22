@@ -23,7 +23,7 @@ class Daftar
    /**
     * @Given /^terdapat opsi "([^"]+)"$/i
     */
-    public function terdapatOpsi1($arg1)
+    public function terdapatOpsi($arg1)
     {
         $this->I->see($arg1);
         // throw new \PHPUnit\Framework\IncompleteTestError("Step `terdapat opsi: :arg1` is not defined");
@@ -52,9 +52,10 @@ class Daftar
      */
     public function sayaMengisiForm(\Behat\Gherkin\Node\PyStringNode $arg1)
     {   
-        $data = json_encode($arg1->getStrings());
-        $data1 = json_encode($data[0]->getStrings());
-        $this->I->see($data1);
+        $data1 = explode(":", $arg1->getStrings()[0]);
+        $data2 = explode(":", $arg1->getStrings()[1]);
+        $data3 = explode(":", $arg1->getStrings()[2]);
+        echo(explode(":", $arg1->getStrings()[0]));
         // $this->I->fillField('Nama Lengkap:',);
         // throw new \PHPUnit\Framework\IncompleteTestError("Step `saya mengisi form: :arg1` is not defined");
     }

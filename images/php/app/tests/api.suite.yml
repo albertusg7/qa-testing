@@ -2,6 +2,12 @@ actor: ApiTester
 modules:
     enabled:
         - REST:
-            url: http://localhost/
+            url: http://localhost:8000/
             depends: PhpBrowser
             part: Json
+
+extensions:
+    enabled:
+        - Codeception\Extension\RunProcess:
+            0: php -S 0.0.0.0:8000 -t public
+            sleep: 2
