@@ -6,7 +6,7 @@ ini hanya butuh dijalankan sekali dan solusi sementara sampai nanti dapet dari d
 ## Lakukan ini untuk install composer
 ```sh
 sudo apt update -y
-sudo apt-get install git unzip php7.4-cli php7.4-curl php7.4-mbstring php7.4-xml php7.4-memcached
+sudo apt-get install git unzip php7.4-cli php7.4-curl php7.4-mbstring php7.4-xml php7.4-memcached php7.4-mysql
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 # update this key at https://composer.github.io/pubkeys.html
 COMPOSER=756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3

@@ -14,10 +14,12 @@ Saya sebagai user sooltan dapat daftar akun, agar saya dapat login di aplikasi s
 
     Dengan saya berada di halaman "Daftar Akun" 
     Dan terdapat opsi:
-        """
-        Nama Lengkap:
-        Nomor HP:
-        Kode Referral:
-        """
+    """
+    Nama Lengkap: Tissa Maharanti
+    Nomor HP: 081310273428
+    Kode Referral: qwe123
+    usia number: 20
+    menikah b: true
+    """
     Dan terdapat opsi "sudah punya akun? Masuk"
     Dan saya pilih opsi "Masuk"

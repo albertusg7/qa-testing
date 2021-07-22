@@ -1,5 +1,5 @@
 <?php
-namespace Steps;
+namespace Step\Acceptance;
 use Log;
 
 
@@ -15,6 +15,7 @@ class Daftar
   
      /**
      * @Given /^saya berada di halaman "([^"]+)"$/
+     * @Given /^I on page "([^"]+)"$/i
      */
     public function sayaBeradaDiHalamanBeranda($arg1)
     {
