@@ -3,8 +3,8 @@
 Fitur: Welcoming Page
 
 Dasar:
-    Dengan saya mendownload apk "Sooltan"
-    Dan terdapat halaman "Welcoming Page 1"
+    # Dengan saya mendownload apk "Sooltan"
+    # Dan terdapat halaman "Welcoming Page 1"
 
 @positif_skenario
 Skenario: Berhasil melihat Welcoming Page

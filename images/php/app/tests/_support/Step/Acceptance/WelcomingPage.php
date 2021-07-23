@@ -3,43 +3,36 @@ namespace Step\Acceptance;
 
 class WelcomingPage extends \AcceptanceTester
 {
+    protected $I;
+
+    function __construct(\AcceptanceTester $I)
+    {
+        $this->I = $I;
+    } 
   /**
-     * @Given saya berada pada halaman :arg1
+     * @Given /^saya berada pada halaman "([^"]+)"$/i
      */
     public function sayaBeradaPadaHalaman($arg1)
     {
-        throw new \PHPUnit\Framework\IncompleteTestError("Step `saya berada pada halaman :arg1` is not defined");
+        $this->I->amOnPage($arg1);
+        // throw new \PHPUnit\Framework\IncompleteTestError("Step `saya berada pada halaman :arg1` is not defined");
     }
 
    /**
-    * @When user pilih :arg1
+    * @When /^user pilih "([^"]+)"$/i
     */
     public function userPilih($arg1)
     {
-        throw new \PHPUnit\Framework\IncompleteTestError("Step `user pilih :arg1` is not defined");
+        $this->I->click($arg1);
+        // throw new \PHPUnit\Framework\IncompleteTestError("Step `user pilih :arg1` is not defined");
     }
 
    /**
-    * @Then sistem akan menuju halaman :arg1
+    * @Then /^sistem akan menuju halaman "([^"]+)"$/i
     */
     public function sistemAkanMenujuHalaman($arg1)
     {
-        throw new \PHPUnit\Framework\IncompleteTestError("Step `sistem akan menuju halaman :arg1` is not defined");
-    }
-
-   /**
-    * @Given saya mendownload apk :arg1
-    */
-    public function sayaMendownloadApk($arg1)
-    {
-        throw new \PHPUnit\Framework\IncompleteTestError("Step `saya mendownload apk :arg1` is not defined");
-    }
-
-   /**
-    * @Given terdapat halaman :arg1
-    */
-    public function terdapatHalaman($arg1)
-    {
-        throw new \PHPUnit\Framework\IncompleteTestError("Step `terdapat halaman :arg1` is not defined");
+        $this->I->amOnPage($arg1);
+        // throw new \PHPUnit\Framework\IncompleteTestError("Step `sistem akan menuju halaman :arg1` is not defined");
     }
 }
